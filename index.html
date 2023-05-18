@@ -1,1 +1,79 @@
-fyguhhgbgy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orji favour</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="ddd">
+    <nav>
+        <a href="/" class="logo">
+            <img src="/images/Slack_icon_2019.svg.png" alt="logo" />
+            <h2>Slack</h2>
+        </a>
+        <div class="navtogglers">
+            <button class="open">Open</button>
+            <button class="close">Close</button>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Why Slack?</a>
+            </li>
+            <li>
+                <a href="#">Solutions</a>
+            </li>
+            <li>
+                <a href="#">Resources</a>
+            </li>
+            <li>
+                <a href="#">Enterprise</a>
+            </li>
+            <li>
+                <a href="#">Pricing</a>
+            </li>
+        </ul>
+        <ol>
+            <li>
+                <a href="#">Sign in</a>
+            </li>
+            <button  class="button">
+                GET STARTED
+            </button>
+        </ol>
+    </nav>
+
+    <main>
+    <div>
+        <h1>Slack is where work happens</h1>
+        <p>
+            With channels in slack, you and your team know where to go to ask questions, share updates and
+            stay in the loop.
+        </p>
+        <button id="b1">TRY FOR FREE</button>
+        <button id="b2">CONTACT SALES</button>
+    </div>
+      
+    <img src="/images/Slack_icon_2019.svg.png" alt="">
+    </main>
+
+    <script>
+        const navopen = document.querySelector(".open")
+        const navclose = document.querySelector(".close")
+        const nav = document.querySelector("nav ul")
+
+        navopen.addEventListener("click", function(){
+            nav.style.top = "35%"
+            navclose.style.display = "block"
+            navopen.style.display = "none"
+        })
+
+        navclose.addEventListener("click", function(){
+            nav.style.top = "-35%"
+            navclose.style.display = "none"
+            navopen.style.display = "block"
+        })
+    </script>
+</body>
+</html>
